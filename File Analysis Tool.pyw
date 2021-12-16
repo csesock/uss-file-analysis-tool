@@ -36,6 +36,16 @@ def openFile():
 
 def analyze():
     analyze_FHD()
+    analyze_CHD()
+    analyze_RHD()
+    analyze_ERH()
+    analyze_CUS()
+    analyze_CSX()
+    analyze_MTR()
+    analyze_MTX()
+    analyze_MTS()
+    analyze_RDG()
+    analyze_RFF()
 
 def analyze_FHD():
     try:
@@ -63,6 +73,36 @@ def analyze_FHD():
         return
     except Exception as e:
         print(str(e))
+
+def analyze_CHD():
+    return
+
+def analyze_RHD():
+    return
+
+def analyze_ERH():
+    return
+
+def analyze_CUS():
+    return
+
+def analyze_CSX():
+    return
+
+def analyze_MTR():
+    return
+
+def analyze_MTX():
+    return
+
+def analyze_MTS():
+    return
+
+def analyze_RDG():
+    return
+
+def analyze_RFF():
+    return
 
 #UI
 text = tk.StringVar()
