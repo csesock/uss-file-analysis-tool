@@ -45,6 +45,15 @@ def analyze_FHD():
                         console.insert('end', 'Error in FHD record at optical probe indicator\n')
                     
                     version_number_of_table = line[5:10]
+                    reserved = line[10:13]
+                    number_of_cycles = line[13:15]
+                    offsite_record_indicator = line[15]
+                    wand_record_indicator = line[16]
+                    extended_route_indicator = line[17]
+                    pad = line[18:126]
+                    cf_lf = line[126:127]
+    except FileNotFoundError:
+        return
     except Exception as e:
         print(str(e))
 
